@@ -1,0 +1,12 @@
+let text = "   tushar kumar     ";
+
+console.log(text.toUpperCase());
+console.log(text.toLowerCase());
+
+// trim() --> its remove the whitespace form both-side of the string not between the string
+console.log(text.trim());
+
+// split() --> It's convert the string into array
+
+let demo = "my name is tushar kumar";
+console.log(demo.split(" "));

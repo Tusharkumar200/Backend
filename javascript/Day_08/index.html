@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="heading">Technology</h1>
+    <ul id="in-list">
+        <li id ="list"> <p id="html" class="fronted">HTML</p></li>
+        <li><p id = "css" class="fronted">CSS</p></li>
+        <li><p id="js" class="fronted">JAVASCRIPT</p></li>
+        <li><p id = "node" class="backend" >NODE</p></li>
+    </ul>
+    <P class="test"> not change yet This is a demo text which is use to test the class selector</P>
+
+</body>
+
+<script>
+    // select the element by ID
+    document.getElementById('html').innerHTML= 'React';
+
+    // select the element by class
+    console.log(document.getElementsByClassName('.test').innerHTML='text change by class');
+
+    // by TagName
+    console.log(document.getElementsByTagName('p').innerHTML='text change tag');
+
+
+    // select the element by querySelector 
+    // --> it's work on only first element present in the html which have same id or class , it work on both id and class
+
+   console.log( document.querySelector('.heading').innerHTML='change');
+   console.log( document.querySelector('#html').innerHTML='Html --> Tech Stack');
+
+//    select the element by querySelectorAll
+console.log( document.querySelectorAll('.fronted').innerHTML='javaScript --> typescriptk');
+console.log( document.querySelectorAll('.fronted').innerHTML='javaScript --> typescriptk');
+
+
+
+</script>
+</html>

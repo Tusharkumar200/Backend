@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MouseEvent</title>
+</head>
+<body>
+    <!-- The MouseEvent Object -->
+
+    <p><span id="para" onmousedown="mouseDown()" onmouseup= 'mouseUp()'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit eaque dolore explicabo quos quibusdam temporibus nihil excepturi expedita natus accusantium? Quo, facilis omnis. Labore fuga eligendi at iusto aliquam alias!</span></p>
+
+    <div id="mydiv">
+        <div id="clickMe" border="2px solid black">
+            <h4>Press Enter</h4>
+        </div>
+    </div>
+
+
+    <script>
+        // Event that occur when the mouse interact with HTML 
+       function mouseDown () {
+            document.getElementById("para").style.color='RED';
+        };
+       function mouseUp () {
+            document.getElementById("para").style.color='BLUE';
+        }
+
+        const press = document.getElementById('clickMe');
+        const myEvent = () =>{
+            press.style.backgroundColor = 'red';
+            console.log("REd");
+        }
+        const myEvent2 = () =>{
+            press.style.backgroundColor = 'blue';
+            console.log("blue");
+        };
+        
+        press.addEventListener('mouseenter',myEvent);
+        press.addEventListener('mouseleave',myEvent2);
+
+
+    </script>
+</body>
+</html>

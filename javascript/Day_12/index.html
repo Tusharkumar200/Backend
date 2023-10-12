@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .parent{
+            border: 2px solid red;
+            color:black;
+            background-color: yellowgreen;
+            height: 100px;
+            width: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .child{
+            border: 2px solid black;
+            background-color: blue;
+            height: 50px;
+            width: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child">
+            Hello Tushar
+        </div>
+    </div>
+
+    <script>
+
+        myParent=()=>{
+            alert("i am parent");
+        };
+        
+        myChild=()=>{
+            alert("i am child");
+            event.stopPropagation();  // event bubbling
+        };
+
+        const parent = document.querySelector('.parent');
+        parent.addEventListener('click',myParent,true);
+
+        const child = document.querySelector('.child',);
+        parent.addEventListener('click',myChild,true);
+    </script>
+</body>
+</html>

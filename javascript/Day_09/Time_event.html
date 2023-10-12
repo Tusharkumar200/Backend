@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Event</title>
+</head>
+<body>
+    
+    <p>You Want To Show My Name</p> 
+    <p id="result"></p>
+    <button id="btn">Click Here</button>
+    <button id="start" onclick="myTime=setTimeout(test,4000)">start</button>
+    <button id="stop" onclick="clearTimeout(myTime)">stop</button>
+
+    <script>
+        test=()=>{alert("its work");};
+        const myName = document.getElementById('result');
+        const myButton = document.getElementById("btn");
+        
+
+        // SetTime interval
+    
+        const name = ()=>{
+           myName.innerHTML='Loading...';
+            setTimeout(()=>{
+            myName.innerHTML='Tushar kumar';
+           },2000)
+           
+          
+        }
+        myButton.addEventListener('click',name)
+
+
+    </script>
+</body>
+</html>

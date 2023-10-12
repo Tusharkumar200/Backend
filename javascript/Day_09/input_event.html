@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>input event</title>
+</head>
+
+<body>
+    <div class="class">
+        <div>
+            <label for="">Your Name</label>
+            <input type="text" name="" id="id">
+            <br>
+            <label>Choose an ice cream flavor😂
+                <select name="iceCream" id="iceCream" >
+                    <option value="">Select One</option>
+                    <option value="chocolate">Chocolate</option>
+                    <option value="vanilla">Vanilla</option>
+                    <option value="sardine">Sardine</option>
+                </select>
+            </label>
+            <br>
+            <div id="result"> </div>
+
+        </div>
+    </div>
+
+    <script>
+        // const selectElement=()=>{
+        //     const inputChange = document.getElementById('id').value;
+        //     const iceCreams= document.getElementById('iceCream').value;
+        //     const Result = document.getElementById("result");
+        //     Result.innerHTML=`Mr. ${inputChange} Select  ${iceCreams} flavor `
+            
+        // }
+
+        // using eventLister
+        const iceCreams= document.getElementById('iceCream');
+        iceCreams.addEventListener('change', ()=>{
+            const inputChange = document.getElementById('id').value;
+            const iceCreams= document.getElementById('iceCream').value;
+            const Result = document.getElementById("result");
+            Result.innerHTML=`Mr. ${inputChange} Select  ${iceCreams} flavor `;
+
+        });
+
+
+    </script>
+</body>
+
+</html>

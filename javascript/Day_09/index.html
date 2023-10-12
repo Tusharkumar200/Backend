@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 1.inline event -->
+    <a href="#" onclick="console.log('its work')">1st way of writing event</a>
+    <br>
+
+    <!-- 2.by calling function  -->
+    <a href="#" onclick=callingFunction()>2nd way of writing event</a>
+
+    <br>
+    <!-- 3.by inline event  -->
+    <a href="#" id='btn'>3nd way of writing event</a>
+
+    <br>
+    <!-- 4.by event listeners  -->
+    <a href="#" id='btn2'>4th  way of writing event</a>
+
+    <script>                                        
+        // 2nd way of writing a event
+        callingFunction = () => {
+            alert("its also work..!");
+        }
+
+        // 3rd way of writing a event --> this can override the function
+        let btn = document.getElementById('btn');
+        
+        btn.onclick = function(){
+            alert("most common way of writing function");
+        };
+
+        btn.onclick = function(){
+            console.log("most common way of writing function");
+        };
+
+        // 4th way of writing a event --> it will not override the function
+        let btn2 = document.getElementById('btn2');
+
+        
+        btn2.addEventListener('click', ()=>{
+            alert('its also work')
+        });
+
+        btn2.addEventListener('click',()=>{
+            console.log('its also work');
+            console.log(event);
+            console.log(event.type);
+        });
+
+    </script>
+</body>
+
+</html>

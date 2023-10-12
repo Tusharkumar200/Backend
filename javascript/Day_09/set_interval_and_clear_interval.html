@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>set Interval and clear interval</title>
+</head>
+<body>
+    <p id = 'count'></p>
+    <button id="mybtn">start</button>
+    <button id="mybtn2">stop</button>
+
+    <script>
+        let num=0;
+        let myTimeInt;
+        const myCount = document.getElementById('count');
+        const myButton = document.getElementById('mybtn');
+        result =()=>{
+            myCount.innerHTML="loadng...";
+             myTimeInt=setInterval(()=>{
+                myCount.innerHTML= `${num}`;
+                num++
+            },1000)
+        };
+
+        myButton.addEventListener('click',result);
+
+        const myButton2 = document.getElementById('mybtn2');
+
+        result2=()=>{
+            clearInterval(myTimeInt)
+
+        }
+        myButton2.addEventListener('click',result2)
+        
+
+    </script>
+</body>
+</html>

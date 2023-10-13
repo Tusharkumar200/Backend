@@ -19,3 +19,4 @@ const calculator =(num1,num2,operators)=>{
 
 const result = calculator(10,5,subs) // Higher Order Function
 console.log(result);
+

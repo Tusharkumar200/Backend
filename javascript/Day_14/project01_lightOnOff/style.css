@@ -1,0 +1,54 @@
+*{
+    margin:10 10;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+body{
+    /* background-color: blue; */
+ 
+    font-family: "Inconsolata";
+    height: 100vh;
+    background: #1c0c24;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+.main-heading h2{
+    margin-bottom: 20px;
+    
+   
+}
+
+#bulb_off{
+    height: 150px;
+    width: 150px;
+}
+#bulb_on{
+    height: 150px;
+    width: 150px;
+}
+
+button{
+    
+
+    height: 50px;
+    width: 150px;
+    background-color: yellow;
+    color: rgb(196, 21, 102);
+    font-size: large;
+    border-radius: 25px;
+    cursor: pointer;
+    position: relative;
+    
+}
+
+#myImg{
+    height: 150px;
+    width: 150px;
+}

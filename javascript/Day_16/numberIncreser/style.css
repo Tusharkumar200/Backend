@@ -1,10 +1,17 @@
 body{
     width: 100vw;
     height: 100vh;
-    background-color: rgb(38, 28, 185);
+    /* background-color: rgba(214, 211, 29, 0.658); */
     display: flex;
     place-items: center;
-    color: white;
+    color: rgba(77, 212, 15, 0.945);
+    background-image: url(https://img.lovepik.com/background/20211022/large/lovepik-blue-geometric-abstract-background-image_401889469.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: fit-content;
+    width: auto;
+    
 }
 
 .counter-container{
@@ -15,7 +22,12 @@ body{
     text-align: center;
     font-size: 30px;
 }
+
 i{
     margin-bottom: 10px;
-    color: yellow;
+    
+}
+
+span{
+    color:rgb(228, 228, 219);
 }

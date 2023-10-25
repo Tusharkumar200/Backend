@@ -8,5 +8,5 @@ async function dbConnect(){
     let db = result.db(databaseName);
     return db.collection('YouTube'); 
 }
-dbConnect();
+
 module.exports = dbConnect; 

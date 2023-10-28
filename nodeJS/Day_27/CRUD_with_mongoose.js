@@ -31,14 +31,14 @@ const deleteInDB = async () => {
     let data = await ProductModel.deleteOne({ name:"Tushar Kumar" });
     console.log(data);
 }
-deleteInDB();
+// deleteInDB();
 
 // Read the Data
 const findInDB = async () => {
-    await mongoose.connect('mongodb://127.0.0.1:27017/test');
+    await mongoose.connect('mongodb://127.0.0.1:27017/studnet');
     let data = await ProductModel.find();
     console.log(data);
 }
 
-// findInDB();
+findInDB();
 

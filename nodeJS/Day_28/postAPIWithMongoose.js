@@ -4,12 +4,14 @@ const Product = require('./product');
 const app = express();
 
 app.use(express.json());
+
 app.post("/create",async(req,resp)=>{
     let data = new Product(req.body);
     let result = await data.save();
     console.log(result);
     resp.send(result);
 }) 
+
 
 app.get('/list', async(req,resp)=>{
    let data =  await product.find();
@@ -31,4 +33,4 @@ app.delete('/delete/:_id', async (req, resp) => {
    
 });
 
-app.listen(10000);
+app.listen(1010);

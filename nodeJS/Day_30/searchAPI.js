@@ -5,8 +5,6 @@ const app = express();
 
 app.use(express.json());
 
-
-
 app.get('/search/:key', async (req, resp) => {
     let data = await Product.find({
         "$or": [

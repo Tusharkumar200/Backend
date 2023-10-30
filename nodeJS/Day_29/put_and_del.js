@@ -4,20 +4,8 @@ const Product = require('./product');
 const app = express();
 
 app.use(express.json());
-app.post("/create",async(req,resp)=>{
-    let data = new Product(req.body);
-    let result = await data.save();
-    console.log(result);
-    resp.send(result);
-}) 
 
-app.get('/list', async(req,resp)=>{
-   let data =  await product.find();
-   resp.send(data);
-})
-
-
-
+// the combine is postAPI_WithMongoose.js file from Day_28
 
 // app.get('/list', async (req, resp) => {
 //     let data = await Product.find();

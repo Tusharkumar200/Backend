@@ -19,7 +19,7 @@ app.get('/', (req, resp) => {
 // post request
 
 app.post('/insert', (req, resp) => {
-    const data = {id:1,name:'Tushar kumar',password:'123456',result:'pass'};
+    const data = {name:'Tushar kumar',password:'123456',result:'pass'};
     con.query('INSERT INTO mytable SET ?',data,(err,result)=>{
         if (err) {
             resp.send(err)

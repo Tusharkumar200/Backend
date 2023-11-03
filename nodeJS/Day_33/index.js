@@ -11,7 +11,7 @@ app.get('/', (req, resp) => {
         }
     })
 });
-
+ 
 app.post('/', (req, resp) => {
     const data = { name: 'Tushar kumar', password: '123456', result: 'pass' };
     con.query('INSERT INTO mytable SET ?', data, (err, result) => {
@@ -28,7 +28,7 @@ app.post('/', (req, resp) => {
 
 // put request
 app.put('/', (req, resp) => {
-    const data = ['Tushar kumar', '123456', 'pass', 1, 1];
+    const data = ['Tushar kumar', '123456', 'pass', 1];
     con.query('UPDATE mytable SET name=?, password=?, result=? WHERE id=?', data, (err, result) => {
         if (err) throw error;
         resp.send(result);

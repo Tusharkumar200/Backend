@@ -5,7 +5,6 @@ const msg = document.getElementById('msg');
 
 const myImg = document.getElementById('myImg');
 
-
 onLight=()=>{
     my_button.innerHTML = 'off';
     myImg.src='images/bulb_on.png';

@@ -2,6 +2,7 @@ const express = require('express');
 const con = require('./config')
 const app = express();
 
+// get request
 app.get('/', (req, resp) => {
     con.query('SELECT * FROM mytable', (err, result) => {
         if (err) {

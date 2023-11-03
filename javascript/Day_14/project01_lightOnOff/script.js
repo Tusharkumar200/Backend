@@ -30,8 +30,6 @@ check=()=>{
     }
 }
 
-
-
 my_button.addEventListener('click', check);
 
 

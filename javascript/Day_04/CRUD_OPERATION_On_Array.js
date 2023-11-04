@@ -1,8 +1,8 @@
 // crud operator on Array
 
-// let Name =['Tushar', 'Mohit','Sachin','Harsh'];
+let Name =['Tushar', 'Mohit','Sachin','Harsh'];
 
-//              ***To insert the Element in the array ***
+            //  ***To insert the Element in the array ***
 
 // push --> 'End of the Array'
 // it's return length of an array.
@@ -11,8 +11,8 @@
 //  Name.push('nirja'); 
 // console.log(Name);
 
-// let newName = Name.push('suraj');
-// console.log(newName);
+let newName = Name.push('suraj');
+console.log(newName);
 
 
 
@@ -43,7 +43,7 @@
 
 // shift--> It'  remove from the first element of the array
 
-let Name =['Tushar', 'Mohit','Sachin','Harsh'];
+//let Name =['Tushar', 'Mohit','Sachin','Harsh'];
 
 Name.shift()
 

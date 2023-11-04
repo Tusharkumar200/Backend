@@ -1,7 +1,7 @@
 body{
     width: 100vw;
     height: 100vh;
-    /* background-color: rgba(214, 211, 29, 0.658); */
+    background-color: rgba(214, 211, 29, 0.658);
     display: flex;
     place-items: center;
     color: rgba(77, 212, 15, 0.945);

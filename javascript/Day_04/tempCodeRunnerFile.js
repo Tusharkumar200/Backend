@@ -1,2 +1,2 @@
-months.splice(1,1,"March");
-// console.log(months);
+ Name.push('nirja'); 
+// console.log(Name);

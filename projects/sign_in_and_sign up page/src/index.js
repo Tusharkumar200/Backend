@@ -15,8 +15,8 @@ app.use(express.urlencoded({extended:false}))
 
 
 app.get('/', (req,res)=>{
-    res.render('login')
-    style:'home.css'
+    res.render('signup')
+   
 })
 
 app.get('/signup', (req,res)=>{

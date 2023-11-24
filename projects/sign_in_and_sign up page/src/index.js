@@ -4,6 +4,7 @@ const path = require('path')
 const hbs = require('hbs')
 const collection = require('./mongodb')
 const { homedir } = require("os")
+const PORT = 5000 || 3000;
 
 const tempelatePath = path.join(__dirname,'../tempelates')
 
@@ -64,6 +65,6 @@ catch(err){
 });
 
 
-app.listen(3000,()=>{
-    console.log('port connected');
+app.listen(PORT,()=>{
+    console.log('server connected on ',PORT);
 })

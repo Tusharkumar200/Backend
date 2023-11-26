@@ -1,20 +1,22 @@
 function AddTodo() {
   return (
-    <div class="container text-center">
-      <div class="row">
-        <div class="col-6">
-          <input type="text" placeholder="Enter ToDO Hear" />
-        </div>
-        <div class="col-4">
-          <input type="date" />
-        </div>
-        <div class="col-2">
-          <button type="button" class="btn btn-success">
-            ADD
-          </button>
+    <>
+      <div className="container text-center">
+        <div className="row">
+          <div className="col-6">
+            <input type="text" placeholder="Enter ToDO Hear" />
+          </div>
+          <div className="col-4">
+            <input type="date" />
+          </div>
+          <div className="col-2">
+            <button type="button" className="btn btn-success">
+              ADD
+            </button>
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 export default AddTodo;

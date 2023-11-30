@@ -1,10 +1,14 @@
- 
- function App() {
-   return (
-     <div className="calculator">
-       <input id='display' type="text" className="calculator-screen" value="0" disabled />
-     </div>
-   );
- }
+import styles from "./App.module.css";
+import Display from "./components/Display";
+import ButtonContainer from "./components/ButtonContainer";
 
- export default App;
+function App() {
+  return (
+    <div className={styles.calculator}>
+      <Display></Display>
+      <ButtonContainer />
+    </div>
+  );
+}
+
+export default App;

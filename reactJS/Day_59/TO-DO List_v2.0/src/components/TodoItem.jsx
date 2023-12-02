@@ -1,6 +1,6 @@
-function TodoItem(todoName,todoDate) {
-// const todoName = 'ghee';
-// const todoDate = '10/07/2023'
+function TodoItem() {
+const todoName = 'ghee';
+const todoDate = '10/07/2023'
     
   return (
     <>

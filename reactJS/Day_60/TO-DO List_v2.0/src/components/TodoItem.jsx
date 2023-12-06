@@ -1,17 +1,22 @@
-function TodoItem2() {
+
+import { MdDelete } from "react-icons/md";
+
+function TodoItem({todoName,todoDate}) {
+
+    
   return (
     <>
-      <div className="container text-center" p-2>
+      <div className="container text-center p-2">
         <div className="row">
           <div className="col-6">
-            <p>GoTo Collage </p>
+            <p> {todoName}</p>
           </div>
-          <div className="col-4 -m 2px">
-            <p>11/12/23</p>
+          <div className="col-4">
+            <p>{todoDate}</p>
           </div>
           <div className="col-2">
             <button type="button" className="btn btn-danger">
-              Delete
+            {<MdDelete />}
             </button>
           </div>
         </div>
@@ -19,4 +24,5 @@ function TodoItem2() {
     </>
   );
 }
-export default TodoItem2;
+
+export default TodoItem;

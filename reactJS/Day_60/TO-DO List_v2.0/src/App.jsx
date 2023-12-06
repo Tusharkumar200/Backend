@@ -7,20 +7,7 @@ import WelcomeMessage from "./components/WelcomeMessage";
 
 
 function App() {
-  const initialTodoItems = [
-    // {
-    //   name: "rice",
-    //   Date: "4/10/2023",
-    // },
-    // {
-    //   name: "Ghee",
-    //   Date: "4/10/2023",
-    // },
-    // {
-    //   name: "samosa",
-    //   Date: "4/10/2023",
-    // },
-  ];
+  const initialTodoItems = [];
   const [todoItems, setTodoItems] = useState(initialTodoItems);
 
   const handleNewItem = (itemName, itemDate) => {

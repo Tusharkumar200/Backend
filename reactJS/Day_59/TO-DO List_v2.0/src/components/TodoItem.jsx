@@ -1,6 +1,8 @@
-function TodoItem() {
-const todoName = 'ghee';
-const todoDate = '10/07/2023'
+
+import { MdDelete } from "react-icons/md";
+
+function TodoItem({todoName,todoDate}) {
+
     
   return (
     <>
@@ -14,7 +16,7 @@ const todoDate = '10/07/2023'
           </div>
           <div className="col-2">
             <button type="button" className="btn btn-danger">
-              Delete
+            {<MdDelete />}
             </button>
           </div>
         </div>

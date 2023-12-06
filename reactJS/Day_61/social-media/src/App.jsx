@@ -1,35 +1,29 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Header from "./components/Header.jsx";
+import Footer from "./components/Footer.jsx";
+import Sidebar from "./components/SideBar.jsx";
+import CreatePost from "./components/CreatePost.jsx";
+import PostList from "./components/PostList.jsx";
+import { useState } from "react";
+import PostListProvider from "./store/post-list-store.jsx";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [selectedTab, setSelectedTab] = useState("Home");
 
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <PostListProvider>
+      <div className="app-container">
+        <Sidebar selectedTab={selectedTab} setSelectedTab={setSelectedTab} />
+        <div className="content">
+          <Header></Header>
+          {selectedTab === "Home" ? <PostList /> : <CreatePost />}
+
+          <Footer />
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    </PostListProvider>
+  );
 }
 
-export default App
+export default App;

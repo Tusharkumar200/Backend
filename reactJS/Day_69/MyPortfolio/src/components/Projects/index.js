@@ -55,7 +55,7 @@ const Projects = ({ openModal, setOpenModal }) => {
               value="programms"
               onClick={() => setToggle("programms")}
             >
-              Programms
+              PROGRAMMS
             </ToggleButton>
           ) : (
             <ToggleButton
@@ -76,7 +76,7 @@ const Projects = ({ openModal, setOpenModal }) => {
               />
             ))}
           {projects
-            .filter((item) => item.category == toggle)
+            .filter((item) => item.category === toggle)
             .map((project) => (
               <ProjectCard
                 project={project}

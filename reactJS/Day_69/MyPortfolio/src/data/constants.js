@@ -12,7 +12,7 @@ export const Bio = {
   github: "https://github.com/tusharkumar200",
   resume:
     "https://drive.google.com/file/d/1W-I-UqmAoDKzkKmzE0y7Fi43LSe8464u/view",
-  linkedin: "https://www.linkedin.com/in/rishav-chanda-b89a791b3/",
+  linkedin: "https://www.linkedin.com/in/tushar2005/",
   twitter: "https://twitter.com/kumarTushar43473",
   
 };
@@ -221,76 +221,72 @@ export const education = [
 export const projects = [
     {
     id: 0,
-    title: "Podstream",
-    date: "Apr 2023 - May 2023",
+    title: "Weather App",
+    date: "sep 2023",
     description:
-      "Developed a full-stack web application that allows users to search for, play, and pause their favorite podcasts on demand and create podcasts. Implemented user authentication using Google Auth and Jwt Auth, made responsive user interface with React JS that provides users with a seamless experience across all devices. Practiced agile methodologies to optimize team efficiency and communication.",
+      "Introducing a cutting-edge Dynamic Weather App crafted with HTML, CSS, and JavaScript. Immerse yourself in real-time weather updates that seamlessly adapt to your location. The app boasts a sleek, user-friendly interface, blending minimalist design with intuitive controls. Witness dynamic visualizations that mirror the ever-changing climate, providing accurate forecasts at your fingertips. Effortlessly navigate through detailed weather information, including temperature, humidity, and wind speed. Responsive and engaging, this app redefines weather tracking, ensuring you stay informed and connected with the elements. Experience the future of weather applications with this innovative creation that brings meteorological data to life in a captivating and accessible manner.",
     image:
-      "https://user-images.githubusercontent.com/64485885/234602896-a1bd8bcc-b72b-4821-83d6-8ad885bf435e.png",
-    tags: ["React Js", "MongoDb", "Node Js", "Express Js", "Redux"],
+      "https://github.com/Tusharkumar200/LiveWeatherWebsitte/assets/129574053/bf2fc6c1-c512-4054-b78e-493b20224d45",
+    tags: ["HTML", "CSS", "JavaScript", "Weather API"],
     category: "web app",
-    github: "https://github.com/rishavchanda/Podstream",
-    webapp: "https://podstream.netlify.app/",
+    github: "https://github.com/Tusharkumar200/LiveWeatherWebsitte",
+    webapp: "https://codexspot.me/LiveWeatherWebsitte/",
     member: [
       {
-        name: "Rishav Chanda",
-        img: "https://avatars.githubusercontent.com/u/64485885?v=4",
-        linkedin: "https://www.linkedin.com/in/rishav-chanda-b89a791b3/",
-        github: "https://github.com/rishavchanda/",
+        name: "Tushar Kumar",
+        img: "https://avatars.githubusercontent.com/u/129574053?v=4",
+        linkedin: "https://www.linkedin.com/in/tushar2005/",
+        github: "https://github.com/Tusharkumar200",
       },
-      {
-        name: "Upasana Chaudhuri",
-        img: "https://avatars.githubusercontent.com/u/100614635?v=4",
-        linkedin: "https://www.linkedin.com/in/upasana-chaudhuri-2a2bb5231/",
-        github: "https://github.com/upasana0710",
-      },
+      
     ],
   },
   {
     id: 1,
-    title: "Vexa",
-    date: "Oct 2022 - Present",
+    title: "Login/Reginsertion Form",
+    date: "Aug 2022 ",
     description:
-      "Designed and developed the Vexa project, a project management app that helps users and teams stay organized and on track. Implemented key features such as task tracking, team collaboration, and time tracking to improve productivity and project outcomes and also invite team/project members. The plan is to add a community of users where they can find developers and other team members and chat system implementation.",
+      "Presenting a streamlined Login/Register program in C++. This minimalist yet powerful application enables secure user authentication with a straightforward interface. Users can effortlessly register accounts, log in securely, and enjoy a seamless experience. A testament to simplicity and functionality, this program ensures hassle-free access control for any C++ application.",
     image:
-      "https://user-images.githubusercontent.com/64485885/234916413-96296f13-fe4b-4cc4-b215-e72bd7c27928.png",
+      "https://github.com/Tusharkumar200/cpp_program/assets/129574053/fbc76c6e-d6d6-4f0f-b38d-ba1c8ca38f60",
     tags: [
-      "React Js",
-      "MongoDb",
-      "Node Js",
-      "Express Js",
-      "Redux",
-      "NodeMailer",
+      "C++",
+      "VS Code"
     ],
-    category: "web app",
-    github: "https://github.com/rishavchanda/Project-Management-App",
-    webapp: "https://vexa-app.netlify.app/",
+    category: "PROGRAMMS",
+    github: "https://github.com/Tusharkumar200/cpp_program/blob/eff7a6adeea451ee63a5ac92b60df7abcc8bd013/developer/coding/project%20c%2B%2B/logigng%20page/main.cpp",
+
+    member: [
+      {
+        name: "Tushar Kumar",
+        img: "https://avatars.githubusercontent.com/u/129574053?v=4",
+        linkedin: "https://www.linkedin.com/in/tushar2005/",
+        github: "https://github.com/Tusharkumar200",
+      },
+      
+    ],
+    
   },
   {
     id: 2,
-    title: "Brain Tumor Detection",
-    date: "Jan 2023 - Mar 2023",
+    title: "Calculator",
+    date: "Aug 2023",
     description:
-      "Preprocessed and augmented the dataset to improve model accuracy, trained the model, created API using model and Python, and used React web app for the project's front end. Achievements: Achieved an accuracy of 99.2% to accurately detect brain tumors from medical images.",
+      "Introducing a dynamic Calculator crafted with HTML, CSS, and JavaScript, offering a user-friendly solution for quick and precise calculations. With a sleek design, intuitive buttons, and responsive functionality, this calculator provides a seamless user experience. From basic arithmetic to complex operations, it's a versatile tool that combines form and function for effortless mathematical tasks. Elevate your calculations with this web-based application that brings efficiency and style together, ensuring a smooth and enjoyable experience for users seeking a reliable online calculator.",
     image:
-      "https://github.com/rishavchanda/Brain-Tumor-Detection/raw/main/Readme_resource/Image2.png",
-    tags: ["Python", "Keras", "TensorFlow", "VGG16", "Pickle", "React"],
-    category: "machine learning",
-    github: "https://github.com/rishavchanda/Brain-Tumor-Detection",
-    webapp: "https://brain-tumor.netlify.app/",
+      "https://github.com/Tusharkumar200/calculator/assets/129574053/c75f1e7b-b14b-4074-b886-d14cfcd2a45a",
+    tags: ["HTML","CSS","JavaScript"],
+    category: "web app",
+    github: "https://github.com/Tusharkumar200/calculator",
+    webapp: "https://codexspot.me/calculator/",
     member: [
       {
-        name: "Rishav Chanda",
-        img: "https://avatars.githubusercontent.com/u/64485885?v=4",
-        linkedin: "https://www.linkedin.com/in/rishav-chanda-b89a791b3/",
-        github: "https://github.com/rishavchanda/",
+        name: "Tushar Kumar",
+        img: "https://avatars.githubusercontent.com/u/129574053?v=4",
+        linkedin: "https://www.linkedin.com/in/tushar2005/",
+        github: "https://github.com/Tusharkumar200",
       },
-      {
-        name: "Upasana Chaudhuri",
-        img: "https://avatars.githubusercontent.com/u/100614635?v=4",
-        linkedin: "https://www.linkedin.com/in/upasana-chaudhuri-2a2bb5231/",
-        github: "https://github.com/upasana0710",
-      },
+      
     ],
   },
   
